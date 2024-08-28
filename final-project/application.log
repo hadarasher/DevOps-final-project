@@ -1,0 +1,105 @@
+2024-08-29T00:00:51.505+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Starting FinalProjectApplicationTests using Java 21.0.4 with PID 8852 (started by hadar in C:\Users\hadar\hadars_projects\devOps\DevOpsFinalProject\final-project)
+2024-08-29T00:00:51.520+03:00 DEBUG 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-29T00:00:51.522+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T00:00:52.885+03:00  INFO 8852 --- [final-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T00:00:52.991+03:00  INFO 8852 --- [final-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interface.
+2024-08-29T00:00:53.972+03:00  INFO 8852 --- [final-project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T00:00:54.118+03:00  INFO 8852 --- [final-project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T00:00:54.191+03:00  INFO 8852 --- [final-project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T00:00:54.880+03:00  INFO 8852 --- [final-project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T00:00:54.936+03:00  INFO 8852 --- [final-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T00:00:55.324+03:00  INFO 8852 --- [final-project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T00:00:55.327+03:00  INFO 8852 --- [final-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T00:00:56.707+03:00  INFO 8852 --- [final-project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T00:00:56.757+03:00  INFO 8852 --- [final-project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T00:00:57.236+03:00  INFO 8852 --- [final-project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-29T00:00:58.042+03:00  WARN 8852 --- [final-project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T00:00:58.105+03:00  WARN 8852 --- [final-project] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 657e3af1-6313-4f27-bb31-45b3eecb6f44
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-29T00:00:58.124+03:00  INFO 8852 --- [final-project] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-08-29T00:00:59.109+03:00  INFO 8852 --- [final-project] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T00:00:59.255+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Started FinalProjectApplicationTests in 8.287 seconds (process running for 10.197)
+2024-08-29T00:00:59.261+03:00  INFO 8852 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Initializing database in runtime...
+2024-08-29T00:00:59.658+03:00  INFO 8852 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Created Job: Job(id=1, uuid=f4cb288e-db2b-4a05-9514-3c9acb1aee4f, jobName=Build Pipeline, status=SUCCESS, createdAt=2024-08-27T00:00:59.262471400, updatedAt=2024-08-28T00:00:59.262471400, jobType=BUILD, sensitiveData=$2a$10$x2XpyoQrzXuVKWT4WtQ.4.Ss2I/zwd4XYicCkRfUO6LRR3JLbgYKG)
+2024-08-29T00:00:59.665+03:00  INFO 8852 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Created Job: Job(id=2, uuid=5e8aaf7c-7713-4655-9533-1918e54f0a5e, jobName=Deploy to Staging, status=FAILED, createdAt=2024-08-24T00:00:59.413466100, updatedAt=2024-08-25T00:00:59.413466100, jobType=DEPLOY, sensitiveData=$2a$10$qUAl5Gu3h1DDgLPdzdfMBuVr/A9Wv3KdkQzVaspaQXljnCBqVn7Ye)
+2024-08-29T00:00:59.667+03:00  INFO 8852 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Created Job: Job(id=3, uuid=58faf301-1493-4914-85ad-30f34083d744, jobName=Unit Tests, status=SUCCESS, createdAt=2024-08-26T00:00:59.534464900, updatedAt=2024-08-27T00:00:59.534464900, jobType=TEST, sensitiveData=)
+2024-08-29T00:00:59.668+03:00  INFO 8852 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Database seeding completed.
+2024-08-29T00:01:00.606+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testJobServiceIntegration
+2024-08-29T00:01:00.607+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitiveData
+2024-08-29T00:01:00.700+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Finding job with ID: 4
+2024-08-29T00:01:00.751+03:00  INFO 8852 --- [final-project] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hit.final_project.FinalProjectApplicationTests$FindJobTests]: FindJobTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-29T00:01:00.756+03:00  INFO 8852 --- [final-project] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hit.final_project.FinalProjectApplication for test class hit.final_project.FinalProjectApplicationTests$FindJobTests
+2024-08-29T00:01:00.775+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testGetJobById
+2024-08-29T00:01:00.777+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitiveData
+2024-08-29T00:01:00.881+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Finding job with ID: 5
+2024-08-29T00:01:00.896+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testGetJobByInvalidId
+2024-08-29T00:01:00.897+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Finding job with ID: -1
+2024-08-29T00:01:00.915+03:00  INFO 8852 --- [final-project] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hit.final_project.FinalProjectApplicationTests$DeleteJobTests]: DeleteJobTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-29T00:01:00.917+03:00  INFO 8852 --- [final-project] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hit.final_project.FinalProjectApplication for test class hit.final_project.FinalProjectApplicationTests$DeleteJobTests
+2024-08-29T00:01:00.932+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testDeleteNonExistentJob
+2024-08-29T00:01:00.934+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Deleting job with ID: -1
+2024-08-29T00:01:00.949+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testDeleteJobSuccessfully
+2024-08-29T00:01:00.950+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-08-29T00:01:01.048+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Deleting job with ID: 6
+2024-08-29T00:01:01.055+03:00  INFO 8852 --- [final-project] [main] hit.final_project.JobService             : Job deleted with ID: 6
+2024-08-29T00:01:01.055+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Finding job with ID: 6
+2024-08-29T00:01:01.065+03:00  INFO 8852 --- [final-project] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hit.final_project.FinalProjectApplicationTests$UpdateJobTests]: UpdateJobTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-29T00:01:01.068+03:00  INFO 8852 --- [final-project] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hit.final_project.FinalProjectApplication for test class hit.final_project.FinalProjectApplicationTests$UpdateJobTests
+2024-08-29T00:01:01.077+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobSuccessfully
+2024-08-29T00:01:01.077+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-08-29T00:01:01.179+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 7
+2024-08-29T00:01:01.181+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=7, uuid=398374c7-c31b-4e89-a50f-08b697fd63ee, jobName=Build Pipeline, status=PENDING, createdAt=2024-08-29T00:01:01.077471, updatedAt=2024-08-29T00:01:01.077471, jobType=BUILD, sensitiveData=$2a$10$qxAK4j5sUazKHYZKN0BFqerBbp3lcwMZ9/uwOnNrvBs9Tm9IJlS2a)
+2024-08-29T00:01:01.182+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Build Pipeline
+2024-08-29T00:01:01.274+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithVariousJobNames with jobName: 
+2024-08-29T00:01:01.274+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-08-29T00:01:01.380+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 8
+2024-08-29T00:01:01.382+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=8, uuid=11182c4d-9bd0-4ea6-8a2d-a6b10205b011, jobName=Original Job, status=PENDING, createdAt=2024-08-29T00:01:01.274468, updatedAt=2024-08-29T00:01:01.274468, jobType=BUILD, sensitiveData=$2a$10$jFfRwmb81WyThhXkj6mdlO8I/Nr5872aqolAV6HEYCBTBhSA8ye3S)
+2024-08-29T00:01:01.383+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : 
+2024-08-29T00:01:01.400+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithVariousJobNames with jobName:  
+2024-08-29T00:01:01.401+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-08-29T00:01:01.493+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 9
+2024-08-29T00:01:01.495+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=9, uuid=f2ae4664-c368-4dcc-a8a0-08a6fc12020d, jobName=Original Job, status=PENDING, createdAt=2024-08-29T00:01:01.401468, updatedAt=2024-08-29T00:01:01.401468, jobType=BUILD, sensitiveData=$2a$10$UtU8cb2PDJNubQZI4Fhb2eVIWWOkVlef.tR/GGSg.7YGDPn7lQeS6)
+2024-08-29T00:01:01.495+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             :  
+2024-08-29T00:01:01.508+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithVariousJobNames with jobName: Valid Job Name
+2024-08-29T00:01:01.508+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-08-29T00:01:01.604+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 10
+2024-08-29T00:01:01.606+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=10, uuid=6774794b-70f7-4bf8-834f-d0d71f2ff22f, jobName=Original Job, status=PENDING, createdAt=2024-08-29T00:01:01.508470, updatedAt=2024-08-29T00:01:01.508470, jobType=BUILD, sensitiveData=$2a$10$6CVMJCkXQ85Fub8D6bm2KuLDQXfNCFwrQBGD7LYwI3.Dw25gaNDNW)
+2024-08-29T00:01:01.606+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Valid Job Name
+2024-08-29T00:01:01.618+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithVariousJobNames with jobName: VeryVeryLongJobNameThatExceedsTheExpectedLengthLimit
+2024-08-29T00:01:01.618+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-08-29T00:01:01.708+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 11
+2024-08-29T00:01:01.709+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=11, uuid=1753ccf3-4dd9-4615-85c7-3f1ab912572a, jobName=Original Job, status=PENDING, createdAt=2024-08-29T00:01:01.618469, updatedAt=2024-08-29T00:01:01.618469, jobType=BUILD, sensitiveData=$2a$10$xgHSnckbB5RXkEtWuFZVGeSeEIr.2RMYXBHY8kb8E3U07x0LayA86)
+2024-08-29T00:01:01.709+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : VeryVeryLongJobNameThatExceedsTheExpectedLengthLimit
+2024-08-29T00:01:01.723+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithInvalidData
+2024-08-29T00:01:01.724+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-08-29T00:01:01.817+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 12
+2024-08-29T00:01:01.818+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=12, uuid=74dad42a-1e26-45b7-938b-ccb755f9c78d, jobName=Original Job, status=PENDING, createdAt=2024-08-29T00:01:01.724474, updatedAt=2024-08-29T00:01:01.724474, jobType=BUILD, sensitiveData=$2a$10$IBI/QAj4MMq8gJ7Y5arCZumLTu4IYkabWzLoAqA0nzCj/2c2UMo9W)
+2024-08-29T00:01:01.818+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : 
+2024-08-29T00:01:01.826+03:00  INFO 8852 --- [final-project] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hit.final_project.FinalProjectApplicationTests$CreateJobTests]: CreateJobTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-29T00:01:01.829+03:00  INFO 8852 --- [final-project] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hit.final_project.FinalProjectApplication for test class hit.final_project.FinalProjectApplicationTests$CreateJobTests
+2024-08-29T00:01:01.843+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithValidJobTypes with jobType: BUILD
+2024-08-29T00:01:01.844+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-08-29T00:01:01.964+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithValidJobTypes with jobType: DEPLOY
+2024-08-29T00:01:01.965+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-08-29T00:01:02.069+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithValidJobTypes with jobType: TEST
+2024-08-29T00:01:02.069+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-08-29T00:01:02.166+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithNullInputs
+2024-08-29T00:01:02.176+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousCreatedAtDates with dateTime: 2023-01-01T00:00:00
+2024-08-29T00:01:02.179+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-08-29T00:01:02.280+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousCreatedAtDates with dateTime: 2024-12-31T23:59:59
+2024-08-29T00:01:02.289+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousCreatedAtDates with dateTime: 2050-01-01T00:00:00
+2024-08-29T00:01:02.299+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousStatuses with status: SUCCESS
+2024-08-29T00:01:02.300+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-08-29T00:01:02.400+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousStatuses with status: FAILED
+2024-08-29T00:01:02.400+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-08-29T00:01:02.497+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousStatuses with status: PENDING
+2024-08-29T00:01:02.497+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-08-29T00:01:02.597+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobSuccessfully
+2024-08-29T00:01:02.598+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitiveData
+2024-08-29T00:01:02.764+03:00  INFO 8852 --- [final-project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T00:01:02.767+03:00  INFO 8852 --- [final-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T00:01:02.772+03:00  INFO 8852 --- [final-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
