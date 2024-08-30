@@ -1,7 +1,8 @@
-version: '3'
+version: '3.8'
 
 services:
   final-project:
+    image: app
     build:
       context: ./final-project
     ports:
@@ -12,14 +13,17 @@ services:
       - redis
       - postgres
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgres://postgres:5432/jobs
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/jobs
       SPRING_DATASOURCE_USERNAME: postgres
       SPRING_DATASOURCE_PASSWORD: password
+      SPRING_PROFILES_ACTIVE: postgres
 
   redis:
     image: bitnami/redis:latest
     networks:
       - app-network
+    environment:
+      REDIS_PASSWORD: password
 
   postgres:
     image: ubuntu/postgres
@@ -35,6 +39,7 @@ services:
       - db-data:/var/lib/postgresql/data
 
   tester:
+    image: apptests
     build:
       context: ./final_project_tests
     depends_on:
