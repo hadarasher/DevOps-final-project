@@ -26,7 +26,7 @@ services:
       REDIS_PASSWORD: password
 
   postgres:
-    image: ubuntu/postgres
+    image: postgres:14
     environment:
       POSTGRES_DB: jobs
       POSTGRES_USER: postgres
