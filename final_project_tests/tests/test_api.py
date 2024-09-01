@@ -2,8 +2,9 @@ import logging
 import requests
 import pytest
 from datetime import datetime
+import time
 
-BASE_URL='http://localhost:8080/api/jobs'
+BASE_URL='http://final-project:8080/api/jobs'
 logging.basicConfig(level=logging.INFO,format='%(asctime)s -%(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
@@ -20,6 +21,20 @@ def log_response(response)->None:
     logger.info(f"Response status: {response.status_code}")
     logger.info(f"Response body: {response_body}")
 
+def wait_for_service(url, timeout=60):
+    start_time = time.time()
+    while True:
+        try:
+            response = requests.get(url)
+            if response.status_code == 200:
+                print(f"Service is up and running.")
+                break
+        except requests.ConnectionError:
+            pass
+        if time.time() - start_time > timeout:
+            raise Exception(f"Service did not become available within {timeout} seconds.")
+        time.sleep(5)
+
 @pytest.fixture(scope='module')
 def setup():
     print("\nSetup for the module")
@@ -31,6 +46,7 @@ def setup():
         'jobType': 'BUILD',
         'sensitiveData': 'top secret'
     }
+    wait_for_service("http://localhost:8080/actuator/health")
     yield job_data
     print("\nTeardown for the module")
 

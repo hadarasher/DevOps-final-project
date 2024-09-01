@@ -1,105 +1,532 @@
-2024-08-29T00:00:51.505+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Starting FinalProjectApplicationTests using Java 21.0.4 with PID 8852 (started by hadar in C:\Users\hadar\hadars_projects\devOps\DevOpsFinalProject\final-project)
-2024-08-29T00:00:51.520+03:00 DEBUG 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running with Spring Boot v3.3.2, Spring v6.1.11
-2024-08-29T00:00:51.522+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T00:00:52.885+03:00  INFO 8852 --- [final-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T00:00:52.991+03:00  INFO 8852 --- [final-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interface.
-2024-08-29T00:00:53.972+03:00  INFO 8852 --- [final-project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T00:00:54.118+03:00  INFO 8852 --- [final-project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-29T00:00:54.191+03:00  INFO 8852 --- [final-project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T00:00:54.880+03:00  INFO 8852 --- [final-project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T00:00:54.936+03:00  INFO 8852 --- [final-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-29T00:00:55.324+03:00  INFO 8852 --- [final-project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-08-29T00:00:55.327+03:00  INFO 8852 --- [final-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-29T00:00:56.707+03:00  INFO 8852 --- [final-project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T00:00:56.757+03:00  INFO 8852 --- [final-project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T00:00:57.236+03:00  INFO 8852 --- [final-project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-08-29T00:00:58.042+03:00  WARN 8852 --- [final-project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T00:00:58.105+03:00  WARN 8852 --- [final-project] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+2024-09-01T00:37:54.033+03:00  INFO 21548 --- [final-project] [restartedMain] h.final_project.FinalProjectApplication  : Starting FinalProjectApplication using Java 21.0.4 with PID 21548 (C:\Users\hadar\hadars_projects\devOps\DevOpsFinalProject\final-project\target\classes started by hadar in C:\Users\hadar\hadars_projects\devOps\DevOpsFinalProject\final-project)
+2024-09-01T00:37:54.036+03:00 DEBUG 21548 --- [final-project] [restartedMain] h.final_project.FinalProjectApplication  : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-09-01T00:37:54.037+03:00  INFO 21548 --- [final-project] [restartedMain] h.final_project.FinalProjectApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T00:37:54.122+03:00  INFO 21548 --- [final-project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-01T00:37:54.123+03:00  INFO 21548 --- [final-project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-01T00:37:55.422+03:00  INFO 21548 --- [final-project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T00:37:55.510+03:00  INFO 21548 --- [final-project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interface.
+2024-09-01T00:37:56.472+03:00  INFO 21548 --- [final-project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T00:37:56.496+03:00  INFO 21548 --- [final-project] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-01T00:37:56.496+03:00  INFO 21548 --- [final-project] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-01T00:37:56.592+03:00  INFO 21548 --- [final-project] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-01T00:37:56.592+03:00  INFO 21548 --- [final-project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2468 ms
+2024-09-01T00:37:56.642+03:00  INFO 21548 --- [final-project] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T00:37:56.975+03:00  INFO 21548 --- [final-project] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7834bba2
+2024-09-01T00:37:56.978+03:00  INFO 21548 --- [final-project] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-01T00:37:56.993+03:00  INFO 21548 --- [final-project] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/jobs'
+2024-09-01T00:37:57.221+03:00  INFO 21548 --- [final-project] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T00:37:57.360+03:00  INFO 21548 --- [final-project] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-01T00:37:57.433+03:00  INFO 21548 --- [final-project] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T00:37:58.109+03:00  INFO 21548 --- [final-project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T00:37:58.239+03:00  WARN 21548 --- [final-project] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-01T00:37:59.652+03:00  INFO 21548 --- [final-project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T00:37:59.739+03:00  INFO 21548 --- [final-project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T00:38:00.215+03:00  INFO 21548 --- [final-project] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-01T00:38:00.818+03:00  WARN 21548 --- [final-project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T00:38:00.865+03:00  WARN 21548 --- [final-project] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 657e3af1-6313-4f27-bb31-45b3eecb6f44
+Using generated security password: a8d01b56-f2a2-481b-b9d3-402735cfba12
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2024-08-29T00:00:58.124+03:00  INFO 8852 --- [final-project] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2024-08-29T00:00:59.109+03:00  INFO 8852 --- [final-project] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-08-29T00:00:59.255+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Started FinalProjectApplicationTests in 8.287 seconds (process running for 10.197)
-2024-08-29T00:00:59.261+03:00  INFO 8852 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Initializing database in runtime...
-2024-08-29T00:00:59.658+03:00  INFO 8852 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Created Job: Job(id=1, uuid=f4cb288e-db2b-4a05-9514-3c9acb1aee4f, jobName=Build Pipeline, status=SUCCESS, createdAt=2024-08-27T00:00:59.262471400, updatedAt=2024-08-28T00:00:59.262471400, jobType=BUILD, sensitiveData=$2a$10$x2XpyoQrzXuVKWT4WtQ.4.Ss2I/zwd4XYicCkRfUO6LRR3JLbgYKG)
-2024-08-29T00:00:59.665+03:00  INFO 8852 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Created Job: Job(id=2, uuid=5e8aaf7c-7713-4655-9533-1918e54f0a5e, jobName=Deploy to Staging, status=FAILED, createdAt=2024-08-24T00:00:59.413466100, updatedAt=2024-08-25T00:00:59.413466100, jobType=DEPLOY, sensitiveData=$2a$10$qUAl5Gu3h1DDgLPdzdfMBuVr/A9Wv3KdkQzVaspaQXljnCBqVn7Ye)
-2024-08-29T00:00:59.667+03:00  INFO 8852 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Created Job: Job(id=3, uuid=58faf301-1493-4914-85ad-30f34083d744, jobName=Unit Tests, status=SUCCESS, createdAt=2024-08-26T00:00:59.534464900, updatedAt=2024-08-27T00:00:59.534464900, jobType=TEST, sensitiveData=)
-2024-08-29T00:00:59.668+03:00  INFO 8852 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Database seeding completed.
-2024-08-29T00:01:00.606+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testJobServiceIntegration
-2024-08-29T00:01:00.607+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitiveData
-2024-08-29T00:01:00.700+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Finding job with ID: 4
-2024-08-29T00:01:00.751+03:00  INFO 8852 --- [final-project] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hit.final_project.FinalProjectApplicationTests$FindJobTests]: FindJobTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-08-29T00:01:00.756+03:00  INFO 8852 --- [final-project] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hit.final_project.FinalProjectApplication for test class hit.final_project.FinalProjectApplicationTests$FindJobTests
-2024-08-29T00:01:00.775+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testGetJobById
-2024-08-29T00:01:00.777+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitiveData
-2024-08-29T00:01:00.881+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Finding job with ID: 5
-2024-08-29T00:01:00.896+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testGetJobByInvalidId
-2024-08-29T00:01:00.897+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Finding job with ID: -1
-2024-08-29T00:01:00.915+03:00  INFO 8852 --- [final-project] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hit.final_project.FinalProjectApplicationTests$DeleteJobTests]: DeleteJobTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-08-29T00:01:00.917+03:00  INFO 8852 --- [final-project] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hit.final_project.FinalProjectApplication for test class hit.final_project.FinalProjectApplicationTests$DeleteJobTests
-2024-08-29T00:01:00.932+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testDeleteNonExistentJob
-2024-08-29T00:01:00.934+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Deleting job with ID: -1
-2024-08-29T00:01:00.949+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testDeleteJobSuccessfully
-2024-08-29T00:01:00.950+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
-2024-08-29T00:01:01.048+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Deleting job with ID: 6
-2024-08-29T00:01:01.055+03:00  INFO 8852 --- [final-project] [main] hit.final_project.JobService             : Job deleted with ID: 6
-2024-08-29T00:01:01.055+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Finding job with ID: 6
-2024-08-29T00:01:01.065+03:00  INFO 8852 --- [final-project] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hit.final_project.FinalProjectApplicationTests$UpdateJobTests]: UpdateJobTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-08-29T00:01:01.068+03:00  INFO 8852 --- [final-project] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hit.final_project.FinalProjectApplication for test class hit.final_project.FinalProjectApplicationTests$UpdateJobTests
-2024-08-29T00:01:01.077+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobSuccessfully
-2024-08-29T00:01:01.077+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
-2024-08-29T00:01:01.179+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 7
-2024-08-29T00:01:01.181+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=7, uuid=398374c7-c31b-4e89-a50f-08b697fd63ee, jobName=Build Pipeline, status=PENDING, createdAt=2024-08-29T00:01:01.077471, updatedAt=2024-08-29T00:01:01.077471, jobType=BUILD, sensitiveData=$2a$10$qxAK4j5sUazKHYZKN0BFqerBbp3lcwMZ9/uwOnNrvBs9Tm9IJlS2a)
-2024-08-29T00:01:01.182+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Build Pipeline
-2024-08-29T00:01:01.274+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithVariousJobNames with jobName: 
-2024-08-29T00:01:01.274+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
-2024-08-29T00:01:01.380+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 8
-2024-08-29T00:01:01.382+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=8, uuid=11182c4d-9bd0-4ea6-8a2d-a6b10205b011, jobName=Original Job, status=PENDING, createdAt=2024-08-29T00:01:01.274468, updatedAt=2024-08-29T00:01:01.274468, jobType=BUILD, sensitiveData=$2a$10$jFfRwmb81WyThhXkj6mdlO8I/Nr5872aqolAV6HEYCBTBhSA8ye3S)
-2024-08-29T00:01:01.383+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : 
-2024-08-29T00:01:01.400+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithVariousJobNames with jobName:  
-2024-08-29T00:01:01.401+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
-2024-08-29T00:01:01.493+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 9
-2024-08-29T00:01:01.495+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=9, uuid=f2ae4664-c368-4dcc-a8a0-08a6fc12020d, jobName=Original Job, status=PENDING, createdAt=2024-08-29T00:01:01.401468, updatedAt=2024-08-29T00:01:01.401468, jobType=BUILD, sensitiveData=$2a$10$UtU8cb2PDJNubQZI4Fhb2eVIWWOkVlef.tR/GGSg.7YGDPn7lQeS6)
-2024-08-29T00:01:01.495+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             :  
-2024-08-29T00:01:01.508+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithVariousJobNames with jobName: Valid Job Name
-2024-08-29T00:01:01.508+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
-2024-08-29T00:01:01.604+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 10
-2024-08-29T00:01:01.606+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=10, uuid=6774794b-70f7-4bf8-834f-d0d71f2ff22f, jobName=Original Job, status=PENDING, createdAt=2024-08-29T00:01:01.508470, updatedAt=2024-08-29T00:01:01.508470, jobType=BUILD, sensitiveData=$2a$10$6CVMJCkXQ85Fub8D6bm2KuLDQXfNCFwrQBGD7LYwI3.Dw25gaNDNW)
-2024-08-29T00:01:01.606+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Valid Job Name
-2024-08-29T00:01:01.618+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithVariousJobNames with jobName: VeryVeryLongJobNameThatExceedsTheExpectedLengthLimit
-2024-08-29T00:01:01.618+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
-2024-08-29T00:01:01.708+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 11
-2024-08-29T00:01:01.709+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=11, uuid=1753ccf3-4dd9-4615-85c7-3f1ab912572a, jobName=Original Job, status=PENDING, createdAt=2024-08-29T00:01:01.618469, updatedAt=2024-08-29T00:01:01.618469, jobType=BUILD, sensitiveData=$2a$10$xgHSnckbB5RXkEtWuFZVGeSeEIr.2RMYXBHY8kb8E3U07x0LayA86)
-2024-08-29T00:01:01.709+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : VeryVeryLongJobNameThatExceedsTheExpectedLengthLimit
-2024-08-29T00:01:01.723+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithInvalidData
-2024-08-29T00:01:01.724+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
-2024-08-29T00:01:01.817+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 12
-2024-08-29T00:01:01.818+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=12, uuid=74dad42a-1e26-45b7-938b-ccb755f9c78d, jobName=Original Job, status=PENDING, createdAt=2024-08-29T00:01:01.724474, updatedAt=2024-08-29T00:01:01.724474, jobType=BUILD, sensitiveData=$2a$10$IBI/QAj4MMq8gJ7Y5arCZumLTu4IYkabWzLoAqA0nzCj/2c2UMo9W)
-2024-08-29T00:01:01.818+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : 
-2024-08-29T00:01:01.826+03:00  INFO 8852 --- [final-project] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hit.final_project.FinalProjectApplicationTests$CreateJobTests]: CreateJobTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-08-29T00:01:01.829+03:00  INFO 8852 --- [final-project] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hit.final_project.FinalProjectApplication for test class hit.final_project.FinalProjectApplicationTests$CreateJobTests
-2024-08-29T00:01:01.843+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithValidJobTypes with jobType: BUILD
-2024-08-29T00:01:01.844+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
-2024-08-29T00:01:01.964+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithValidJobTypes with jobType: DEPLOY
-2024-08-29T00:01:01.965+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
-2024-08-29T00:01:02.069+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithValidJobTypes with jobType: TEST
-2024-08-29T00:01:02.069+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
-2024-08-29T00:01:02.166+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithNullInputs
-2024-08-29T00:01:02.176+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousCreatedAtDates with dateTime: 2023-01-01T00:00:00
-2024-08-29T00:01:02.179+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
-2024-08-29T00:01:02.280+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousCreatedAtDates with dateTime: 2024-12-31T23:59:59
-2024-08-29T00:01:02.289+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousCreatedAtDates with dateTime: 2050-01-01T00:00:00
-2024-08-29T00:01:02.299+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousStatuses with status: SUCCESS
-2024-08-29T00:01:02.300+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
-2024-08-29T00:01:02.400+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousStatuses with status: FAILED
-2024-08-29T00:01:02.400+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
-2024-08-29T00:01:02.497+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousStatuses with status: PENDING
-2024-08-29T00:01:02.497+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
-2024-08-29T00:01:02.597+03:00  INFO 8852 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobSuccessfully
-2024-08-29T00:01:02.598+03:00 DEBUG 8852 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitiveData
-2024-08-29T00:01:02.764+03:00  INFO 8852 --- [final-project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T00:01:02.767+03:00  INFO 8852 --- [final-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-29T00:01:02.772+03:00  INFO 8852 --- [final-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-01T00:38:00.879+03:00  INFO 21548 --- [final-project] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-01T00:38:01.690+03:00  INFO 21548 --- [final-project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-01T00:38:01.747+03:00  INFO 21548 --- [final-project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-01T00:38:01.758+03:00  INFO 21548 --- [final-project] [restartedMain] h.final_project.FinalProjectApplication  : Started FinalProjectApplication in 8.605 seconds (process running for 10.428)
+2024-09-01T00:38:01.764+03:00  INFO 21548 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Initializing database in runtime...
+2024-09-01T00:38:02.079+03:00  INFO 21548 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Created Job: Job(id=602, uuid=f45b4cfd-a3b1-4fe7-94d8-4545806cf653, jobName=Build Pipeline, status=SUCCESS, createdAt=2024-08-30T00:38:01.764049800, updatedAt=2024-08-31T00:38:01.764049800, jobType=BUILD, sensitiveData=$2a$10$zFbZaW0JRBZ7YBWvSWKB7.Z4AHsI9HXG39.rolVoCQZBxX4rjTf3G)
+2024-09-01T00:38:02.084+03:00  INFO 21548 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Created Job: Job(id=603, uuid=048f7b11-b16e-4c84-a758-357718449ee6, jobName=Deploy to Staging, status=FAILED, createdAt=2024-08-27T00:38:01.874035600, updatedAt=2024-08-28T00:38:01.874035600, jobType=DEPLOY, sensitiveData=$2a$10$dwgy3OBX4maKOHPm/0jJdOpDulUSgkg.Vcww113Un8bjWUuO7apw6)
+2024-09-01T00:38:02.087+03:00  INFO 21548 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Created Job: Job(id=604, uuid=a71aed18-0d5f-448e-9526-6724ecdba5e0, jobName=Unit Tests, status=SUCCESS, createdAt=2024-08-29T00:38:01.984084400, updatedAt=2024-08-30T00:38:01.984084400, jobType=TEST, sensitiveData=)
+2024-09-01T00:38:02.087+03:00  INFO 21548 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Database seeding completed.
+2024-09-01T00:43:33.855+03:00  INFO 21548 --- [final-project] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-01T00:43:33.882+03:00  INFO 21548 --- [final-project] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T00:43:33.923+03:00  INFO 21548 --- [final-project] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-01T00:43:33.936+03:00  INFO 21548 --- [final-project] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-01T00:43:34.318+03:00  INFO 21548 --- [final-project] [restartedMain] h.final_project.FinalProjectApplication  : Starting FinalProjectApplication using Java 21.0.4 with PID 21548 (C:\Users\hadar\hadars_projects\devOps\DevOpsFinalProject\final-project\target\classes started by hadar in C:\Users\hadar\hadars_projects\devOps\DevOpsFinalProject\final-project)
+2024-09-01T00:43:34.319+03:00 DEBUG 21548 --- [final-project] [restartedMain] h.final_project.FinalProjectApplication  : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-09-01T00:43:34.339+03:00  INFO 21548 --- [final-project] [restartedMain] h.final_project.FinalProjectApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T00:43:34.705+03:00  INFO 21548 --- [final-project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T00:43:34.715+03:00  INFO 21548 --- [final-project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2024-09-01T00:43:34.991+03:00  INFO 21548 --- [final-project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T00:43:34.994+03:00  INFO 21548 --- [final-project] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-01T00:43:34.994+03:00  INFO 21548 --- [final-project] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-01T00:43:35.030+03:00  INFO 21548 --- [final-project] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-01T00:43:35.031+03:00  INFO 21548 --- [final-project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 687 ms
+2024-09-01T00:43:35.051+03:00  INFO 21548 --- [final-project] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-09-01T00:43:35.152+03:00  INFO 21548 --- [final-project] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@27e21695
+2024-09-01T00:43:35.152+03:00  INFO 21548 --- [final-project] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-09-01T00:43:35.153+03:00  INFO 21548 --- [final-project] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/jobs'
+2024-09-01T00:43:35.191+03:00  INFO 21548 --- [final-project] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T00:43:35.197+03:00  INFO 21548 --- [final-project] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T00:43:35.220+03:00  INFO 21548 --- [final-project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T00:43:35.233+03:00  WARN 21548 --- [final-project] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-01T00:43:35.315+03:00  INFO 21548 --- [final-project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T00:43:35.342+03:00  INFO 21548 --- [final-project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T00:43:35.484+03:00  WARN 21548 --- [final-project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T00:43:35.505+03:00  WARN 21548 --- [final-project] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9d97b33c-5e4a-4ec1-acf5-13720e042777
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T00:43:35.507+03:00  INFO 21548 --- [final-project] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-01T00:43:35.770+03:00  INFO 21548 --- [final-project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-01T00:43:35.807+03:00  INFO 21548 --- [final-project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-01T00:43:35.813+03:00  INFO 21548 --- [final-project] [restartedMain] h.final_project.FinalProjectApplication  : Started FinalProjectApplication in 1.535 seconds (process running for 344.484)
+2024-09-01T00:43:35.814+03:00  INFO 21548 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Initializing database in runtime...
+2024-09-01T00:43:36.171+03:00  INFO 21548 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Created Job: Job(id=652, uuid=587503d0-2d8d-4cf0-8d43-123d8f8b3fc5, jobName=Build Pipeline, status=SUCCESS, createdAt=2024-08-30T00:43:35.814567800, updatedAt=2024-08-31T00:43:35.814567800, jobType=BUILD, sensitiveData=$2a$10$nuwg5Vs8WNFmQ1xv6iT0YuBtM3OpoCcbpfWOOiZUNTil3FHRWiOSi)
+2024-09-01T00:43:36.273+03:00  INFO 21548 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Created Job: Job(id=653, uuid=b46ee516-8f61-4905-b595-ceb736d56f52, jobName=Deploy to Staging, status=FAILED, createdAt=2024-08-27T00:43:35.986569300, updatedAt=2024-08-28T00:43:35.987562600, jobType=DEPLOY, sensitiveData=$2a$10$BDC3xc.01.pzTr44DDvrce1fBtVA2YYSOgAy9f8CoaIZOEcmyryDC)
+2024-09-01T00:43:36.388+03:00  INFO 21548 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Created Job: Job(id=654, uuid=47d44693-2803-4092-9138-46bbb8ca3723, jobName=Unit Tests, status=SUCCESS, createdAt=2024-08-29T00:43:36.137557100, updatedAt=2024-08-30T00:43:36.137557100, jobType=TEST, sensitiveData=)
+2024-09-01T00:43:36.389+03:00  INFO 21548 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Database seeding completed.
+2024-09-01T00:43:36.394+03:00  INFO 21548 --- [final-project] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-01T00:47:35.290+03:00  INFO 21548 --- [final-project] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-01T00:47:35.309+03:00  INFO 21548 --- [final-project] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T00:47:35.311+03:00  INFO 21548 --- [final-project] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-09-01T00:47:35.334+03:00  INFO 21548 --- [final-project] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-09-01T00:47:35.481+03:00  INFO 21548 --- [final-project] [restartedMain] h.final_project.FinalProjectApplication  : Starting FinalProjectApplication using Java 21.0.4 with PID 21548 (C:\Users\hadar\hadars_projects\devOps\DevOpsFinalProject\final-project\target\classes started by hadar in C:\Users\hadar\hadars_projects\devOps\DevOpsFinalProject\final-project)
+2024-09-01T00:47:35.481+03:00 DEBUG 21548 --- [final-project] [restartedMain] h.final_project.FinalProjectApplication  : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-09-01T00:47:35.482+03:00  INFO 21548 --- [final-project] [restartedMain] h.final_project.FinalProjectApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T00:47:35.908+03:00  INFO 21548 --- [final-project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T00:47:35.918+03:00  INFO 21548 --- [final-project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2024-09-01T00:47:36.183+03:00  INFO 21548 --- [final-project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T00:47:36.186+03:00  INFO 21548 --- [final-project] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-01T00:47:36.186+03:00  INFO 21548 --- [final-project] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-01T00:47:36.223+03:00  INFO 21548 --- [final-project] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-01T00:47:36.223+03:00  INFO 21548 --- [final-project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 737 ms
+2024-09-01T00:47:36.243+03:00  INFO 21548 --- [final-project] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-09-01T00:47:36.357+03:00  INFO 21548 --- [final-project] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@3775a880
+2024-09-01T00:47:36.358+03:00  INFO 21548 --- [final-project] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-09-01T00:47:36.358+03:00  INFO 21548 --- [final-project] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/jobs'
+2024-09-01T00:47:36.413+03:00  INFO 21548 --- [final-project] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T00:47:36.419+03:00  INFO 21548 --- [final-project] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T00:47:36.433+03:00  INFO 21548 --- [final-project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T00:47:36.447+03:00  WARN 21548 --- [final-project] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-01T00:47:36.703+03:00  INFO 21548 --- [final-project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T00:47:36.730+03:00  INFO 21548 --- [final-project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T00:47:36.945+03:00  WARN 21548 --- [final-project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T00:47:36.969+03:00  WARN 21548 --- [final-project] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0f5b018d-8fd4-457e-b72f-235979b26b31
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T00:47:36.971+03:00  INFO 21548 --- [final-project] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-01T00:47:37.307+03:00  INFO 21548 --- [final-project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-01T00:47:37.344+03:00  INFO 21548 --- [final-project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-01T00:47:37.353+03:00  INFO 21548 --- [final-project] [restartedMain] h.final_project.FinalProjectApplication  : Started FinalProjectApplication in 1.932 seconds (process running for 586.024)
+2024-09-01T00:47:37.355+03:00  INFO 21548 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Initializing database in runtime...
+2024-09-01T00:47:37.652+03:00  INFO 21548 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Created Job: Job(id=702, uuid=d0375cc8-5547-428e-bef6-3330674ba39f, jobName=Build Pipeline, status=SUCCESS, createdAt=2024-08-30T00:47:37.355372500, updatedAt=2024-08-31T00:47:37.355372500, jobType=BUILD, sensitiveData=$2a$10$poWxROuzC9HMF1tGmkT2uuwE6mZXlomDumcdsmh4tPLarJPdt5V1a)
+2024-09-01T00:47:37.658+03:00  INFO 21548 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Created Job: Job(id=703, uuid=d3097a3e-36ac-41c8-8dec-a1b51b028257, jobName=Deploy to Staging, status=FAILED, createdAt=2024-08-27T00:47:37.489373500, updatedAt=2024-08-28T00:47:37.489373500, jobType=DEPLOY, sensitiveData=$2a$10$o6ZEDXNSj4pPRcfWjB3Px.lWW8RCun2YOxqRw8AJBN8XmFzTX8LI.)
+2024-09-01T00:47:37.661+03:00  INFO 21548 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Created Job: Job(id=704, uuid=cb8d95a5-5951-4b14-a381-a886df49232e, jobName=Unit Tests, status=SUCCESS, createdAt=2024-08-29T00:47:37.645369, updatedAt=2024-08-30T00:47:37.645369, jobType=TEST, sensitiveData=)
+2024-09-01T00:47:37.662+03:00  INFO 21548 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Database seeding completed.
+2024-09-01T00:47:37.663+03:00  INFO 21548 --- [final-project] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-01T00:48:02.648+03:00  INFO 21548 --- [final-project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T00:48:02.649+03:00  INFO 21548 --- [final-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-09-01T00:48:02.661+03:00  INFO 21548 --- [final-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-09-01T00:56:42.829+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Starting FinalProjectApplicationTests using Java 21.0.4 with PID 14560 (started by hadar in C:\Users\hadar\hadars_projects\devOps\DevOpsFinalProject\final-project)
+2024-09-01T00:56:42.831+03:00 DEBUG 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-09-01T00:56:42.833+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T00:56:44.249+03:00  INFO 14560 --- [final-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T00:56:44.372+03:00  INFO 14560 --- [final-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interface.
+2024-09-01T00:56:45.470+03:00  INFO 14560 --- [final-project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T00:56:45.635+03:00  INFO 14560 --- [final-project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-01T00:56:45.716+03:00  INFO 14560 --- [final-project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T00:56:46.483+03:00  INFO 14560 --- [final-project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T00:56:46.537+03:00  INFO 14560 --- [final-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T00:56:46.991+03:00  INFO 14560 --- [final-project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:d8561236-bc45-4479-9955-523436c4882a user=SA
+2024-09-01T00:56:46.995+03:00  INFO 14560 --- [final-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-01T00:56:48.641+03:00  INFO 14560 --- [final-project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T00:56:48.712+03:00  INFO 14560 --- [final-project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T00:56:49.406+03:00  INFO 14560 --- [final-project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-01T00:56:50.281+03:00  WARN 14560 --- [final-project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T00:56:50.362+03:00  WARN 14560 --- [final-project] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d44f0fca-ffa6-4b57-a394-a2d345adbc3b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T00:56:50.381+03:00  INFO 14560 --- [final-project] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-01T00:56:51.800+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Started FinalProjectApplicationTests in 9.547 seconds (process running for 11.735)
+2024-09-01T00:56:51.807+03:00  INFO 14560 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Initializing database in runtime...
+2024-09-01T00:56:52.250+03:00  INFO 14560 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Created Job: Job(id=1, uuid=8ca91af8-0543-4f4c-91aa-8ac2b25c38f5, jobName=Build Pipeline, status=SUCCESS, createdAt=2024-08-30T00:56:51.808631900, updatedAt=2024-08-31T00:56:51.808631900, jobType=BUILD, sensitiveData=$2a$10$j77O0DyUPItS4IPJKJOqk.OLXeZpeHEZFnuQFtFA6Ij2GGc80o/sK)
+2024-09-01T00:56:52.257+03:00  INFO 14560 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Created Job: Job(id=2, uuid=bc7f446e-ae71-4b31-acf4-fd3144298b61, jobName=Deploy to Staging, status=FAILED, createdAt=2024-08-27T00:56:51.965642900, updatedAt=2024-08-28T00:56:51.966615300, jobType=DEPLOY, sensitiveData=$2a$10$2a.w6UcIw0ganOAEBh2BZuTWx6GyzQR/UMYdg6PUEz..mQ3rjRGt.)
+2024-09-01T00:56:52.260+03:00  INFO 14560 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Created Job: Job(id=3, uuid=9a58c00b-94fe-4283-aac2-00eea6632bbc, jobName=Unit Tests, status=SUCCESS, createdAt=2024-08-29T00:56:52.107609200, updatedAt=2024-08-30T00:56:52.107609200, jobType=TEST, sensitiveData=)
+2024-09-01T00:56:52.261+03:00  INFO 14560 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Database seeding completed.
+2024-09-01T00:56:53.267+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testJobServiceIntegration
+2024-09-01T00:56:53.267+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitiveData
+2024-09-01T00:56:53.377+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : Finding job with ID: 4
+2024-09-01T00:56:53.440+03:00  INFO 14560 --- [final-project] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hit.final_project.FinalProjectApplicationTests$FindJobTests]: FindJobTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-01T00:56:53.448+03:00  INFO 14560 --- [final-project] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hit.final_project.FinalProjectApplication for test class hit.final_project.FinalProjectApplicationTests$FindJobTests
+2024-09-01T00:56:53.469+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testGetJobById
+2024-09-01T00:56:53.470+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitiveData
+2024-09-01T00:56:53.579+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : Finding job with ID: 5
+2024-09-01T00:56:53.591+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testGetJobByInvalidId
+2024-09-01T00:56:53.593+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : Finding job with ID: -1
+2024-09-01T00:56:53.609+03:00  INFO 14560 --- [final-project] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hit.final_project.FinalProjectApplicationTests$DeleteJobTests]: DeleteJobTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-01T00:56:53.613+03:00  INFO 14560 --- [final-project] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hit.final_project.FinalProjectApplication for test class hit.final_project.FinalProjectApplicationTests$DeleteJobTests
+2024-09-01T00:56:53.626+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testDeleteNonExistentJob
+2024-09-01T00:56:53.628+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : Deleting job with ID: -1
+2024-09-01T00:56:53.646+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testDeleteJobSuccessfully
+2024-09-01T00:56:53.646+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-09-01T00:56:53.752+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : Deleting job with ID: 6
+2024-09-01T00:56:53.760+03:00  INFO 14560 --- [final-project] [main] hit.final_project.JobService             : Job deleted with ID: 6
+2024-09-01T00:56:53.760+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : Finding job with ID: 6
+2024-09-01T00:56:53.769+03:00  INFO 14560 --- [final-project] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hit.final_project.FinalProjectApplicationTests$UpdateJobTests]: UpdateJobTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-01T00:56:53.772+03:00  INFO 14560 --- [final-project] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hit.final_project.FinalProjectApplication for test class hit.final_project.FinalProjectApplicationTests$UpdateJobTests
+2024-09-01T00:56:53.781+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobSuccessfully
+2024-09-01T00:56:53.782+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-09-01T00:56:53.888+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 7
+2024-09-01T00:56:53.890+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=7, uuid=82613c28-552c-48f3-98a9-c5aa0812befb, jobName=Build Pipeline, status=PENDING, createdAt=2024-09-01T00:56:53.782944, updatedAt=2024-09-01T00:56:53.782944, jobType=BUILD, sensitiveData=$2a$10$mFCMuRpT5fEyRC3GsJb0bOkMmXB24XA3jXdRuuLF3lpDhukkhGwD6)
+2024-09-01T00:56:53.890+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : Build Pipeline
+2024-09-01T00:56:53.975+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithVariousJobNames with jobName: 
+2024-09-01T00:56:53.975+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-09-01T00:56:54.080+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 8
+2024-09-01T00:56:54.082+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=8, uuid=8cad86de-24ff-46af-9893-9d9c60621cf0, jobName=Original Job, status=PENDING, createdAt=2024-09-01T00:56:53.975951, updatedAt=2024-09-01T00:56:53.975951, jobType=BUILD, sensitiveData=$2a$10$PIM9Zi2zvJBYRRahyZ1X7eIMWek7UTdlPwXRsLyC14owdASjmNr2m)
+2024-09-01T00:56:54.082+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : 
+2024-09-01T00:56:54.096+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithVariousJobNames with jobName:  
+2024-09-01T00:56:54.097+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-09-01T00:56:54.205+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 9
+2024-09-01T00:56:54.207+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=9, uuid=2a13a978-a5cd-4042-9b3d-c7a331eddf9c, jobName=Original Job, status=PENDING, createdAt=2024-09-01T00:56:54.096949, updatedAt=2024-09-01T00:56:54.096949, jobType=BUILD, sensitiveData=$2a$10$G2.mg5teOSnNiEODUCWRouHshQo42UbfSPb8XUXGg8vS3tT9Qfal6)
+2024-09-01T00:56:54.207+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             :  
+2024-09-01T00:56:54.219+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithVariousJobNames with jobName: Valid Job Name
+2024-09-01T00:56:54.219+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-09-01T00:56:54.322+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 10
+2024-09-01T00:56:54.323+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=10, uuid=eb33806a-4eaa-44b3-ba97-08efacb65ee8, jobName=Original Job, status=PENDING, createdAt=2024-09-01T00:56:54.219949, updatedAt=2024-09-01T00:56:54.219949, jobType=BUILD, sensitiveData=$2a$10$7otLFhItW/1gjSxfj0t3jeysCi7RoHArO1SHqO8jT/MaCnVyXDo9q)
+2024-09-01T00:56:54.323+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : Valid Job Name
+2024-09-01T00:56:54.341+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithVariousJobNames with jobName: VeryVeryLongJobNameThatExceedsTheExpectedLengthLimit
+2024-09-01T00:56:54.341+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-09-01T00:56:54.445+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 11
+2024-09-01T00:56:54.447+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=11, uuid=f417b922-6196-4148-8b16-9fa5e27f9a07, jobName=Original Job, status=PENDING, createdAt=2024-09-01T00:56:54.341948, updatedAt=2024-09-01T00:56:54.341948, jobType=BUILD, sensitiveData=$2a$10$sep.NmgqraVoQvt06zFr9eiiOdi2.QKlKJiWmj8LZHOhTuKfBoo4q)
+2024-09-01T00:56:54.447+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : VeryVeryLongJobNameThatExceedsTheExpectedLengthLimit
+2024-09-01T00:56:54.478+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithInvalidData
+2024-09-01T00:56:54.479+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-09-01T00:56:54.600+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 12
+2024-09-01T00:56:54.603+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=12, uuid=e14ae155-687e-49d3-adb0-b34fc917c771, jobName=Original Job, status=PENDING, createdAt=2024-09-01T00:56:54.479947, updatedAt=2024-09-01T00:56:54.479947, jobType=BUILD, sensitiveData=$2a$10$wn1IGA/68grXkrJ2wOIt9uUAlTIxRvP25Q19/xP/LmDYKkXy19AWS)
+2024-09-01T00:56:54.603+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : 
+2024-09-01T00:56:54.616+03:00  INFO 14560 --- [final-project] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hit.final_project.FinalProjectApplicationTests$CreateJobTests]: CreateJobTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-01T00:56:54.620+03:00  INFO 14560 --- [final-project] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hit.final_project.FinalProjectApplication for test class hit.final_project.FinalProjectApplicationTests$CreateJobTests
+2024-09-01T00:56:54.636+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithValidJobTypes with jobType: BUILD
+2024-09-01T00:56:54.637+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-09-01T00:56:54.760+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithValidJobTypes with jobType: DEPLOY
+2024-09-01T00:56:54.760+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-09-01T00:56:54.878+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithValidJobTypes with jobType: TEST
+2024-09-01T00:56:54.879+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-09-01T00:56:54.999+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithNullInputs
+2024-09-01T00:56:55.011+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousCreatedAtDates with dateTime: 2023-01-01T00:00:00
+2024-09-01T00:56:55.015+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-09-01T00:56:55.125+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousCreatedAtDates with dateTime: 2024-12-31T23:59:59
+2024-09-01T00:56:55.134+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousCreatedAtDates with dateTime: 2050-01-01T00:00:00
+2024-09-01T00:56:55.149+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousStatuses with status: SUCCESS
+2024-09-01T00:56:55.149+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-09-01T00:56:55.366+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousStatuses with status: FAILED
+2024-09-01T00:56:55.366+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-09-01T00:56:55.481+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousStatuses with status: PENDING
+2024-09-01T00:56:55.481+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-09-01T00:56:55.590+03:00  INFO 14560 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobSuccessfully
+2024-09-01T00:56:55.590+03:00 DEBUG 14560 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitiveData
+2024-09-01T00:56:55.757+03:00  INFO 14560 --- [final-project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T00:56:55.760+03:00  INFO 14560 --- [final-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-01T00:56:55.765+03:00  INFO 14560 --- [final-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-01T01:14:51.055+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Starting FinalProjectApplicationTests using Java 21.0.4 with PID 1520 (started by hadar in C:\Users\hadar\hadars_projects\devOps\DevOpsFinalProject\final-project)
+2024-09-01T01:14:51.058+03:00 DEBUG 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-09-01T01:14:51.059+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T01:14:52.841+03:00  INFO 1520 --- [final-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T01:14:53.014+03:00  INFO 1520 --- [final-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150 ms. Found 1 JPA repository interface.
+2024-09-01T01:14:54.294+03:00  INFO 1520 --- [final-project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T01:14:54.466+03:00  INFO 1520 --- [final-project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-01T01:14:54.548+03:00  INFO 1520 --- [final-project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T01:14:55.394+03:00  INFO 1520 --- [final-project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T01:14:55.495+03:00  INFO 1520 --- [final-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T01:14:55.997+03:00  INFO 1520 --- [final-project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:6794fbbe-b627-44a0-bafe-e094f60fb77b user=SA
+2024-09-01T01:14:56.000+03:00  INFO 1520 --- [final-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-01T01:14:57.902+03:00  INFO 1520 --- [final-project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T01:14:57.969+03:00  INFO 1520 --- [final-project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T01:14:58.591+03:00  INFO 1520 --- [final-project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-01T01:14:59.379+03:00  WARN 1520 --- [final-project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T01:14:59.450+03:00  WARN 1520 --- [final-project] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5c61ae36-de97-484e-82c9-8aa354d3758a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T01:14:59.470+03:00  INFO 1520 --- [final-project] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-01T01:15:00.615+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Started FinalProjectApplicationTests in 10.2 seconds (process running for 12.67)
+2024-09-01T01:15:00.620+03:00  INFO 1520 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Initializing database in runtime...
+2024-09-01T01:15:00.978+03:00  INFO 1520 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Created Job: Job(id=1, uuid=3729d8a7-d603-42f7-9669-2b4ad02c7bd8, jobName=Build Pipeline, status=SUCCESS, createdAt=2024-08-30T01:15:00.620273500, updatedAt=2024-08-31T01:15:00.620273500, jobType=BUILD, sensitiveData=$2a$10$mi/0fxShqnKPTUKkepqXW..w0urWWTQnOorGHHU3H2u8zYywMMzIm)
+2024-09-01T01:15:00.983+03:00  INFO 1520 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Created Job: Job(id=2, uuid=7cb741c6-925f-4838-bb45-baab08c04293, jobName=Deploy to Staging, status=FAILED, createdAt=2024-08-27T01:15:00.753302800, updatedAt=2024-08-28T01:15:00.753302800, jobType=DEPLOY, sensitiveData=$2a$10$0SaNqjvaXzZlUxRpX7wsVezS.tYxEK8Ueos/7L/NjePbn1TIC4HWS)
+2024-09-01T01:15:00.985+03:00  INFO 1520 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Created Job: Job(id=3, uuid=e2a2a0bd-90fa-4312-8da2-0eda0d580727, jobName=Unit Tests, status=SUCCESS, createdAt=2024-08-29T01:15:00.866304700, updatedAt=2024-08-30T01:15:00.866304700, jobType=TEST, sensitiveData=)
+2024-09-01T01:15:00.985+03:00  INFO 1520 --- [final-project] [main] hit.final_project.DatabaseSeeder         : Database seeding completed.
+2024-09-01T01:15:02.563+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testJobServiceIntegration
+2024-09-01T01:15:02.564+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitiveData
+2024-09-01T01:15:02.706+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : Finding job with ID: 4
+2024-09-01T01:15:02.779+03:00  INFO 1520 --- [final-project] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hit.final_project.FinalProjectApplicationTests$FindJobTests]: FindJobTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-01T01:15:02.784+03:00  INFO 1520 --- [final-project] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hit.final_project.FinalProjectApplication for test class hit.final_project.FinalProjectApplicationTests$FindJobTests
+2024-09-01T01:15:02.805+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testGetJobById
+2024-09-01T01:15:02.806+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitiveData
+2024-09-01T01:15:02.945+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : Finding job with ID: 5
+2024-09-01T01:15:02.964+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testGetJobByInvalidId
+2024-09-01T01:15:02.965+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : Finding job with ID: -1
+2024-09-01T01:15:02.979+03:00  INFO 1520 --- [final-project] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hit.final_project.FinalProjectApplicationTests$DeleteJobTests]: DeleteJobTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-01T01:15:02.984+03:00  INFO 1520 --- [final-project] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hit.final_project.FinalProjectApplication for test class hit.final_project.FinalProjectApplicationTests$DeleteJobTests
+2024-09-01T01:15:03.002+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testDeleteNonExistentJob
+2024-09-01T01:15:03.005+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : Deleting job with ID: -1
+2024-09-01T01:15:03.027+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testDeleteJobSuccessfully
+2024-09-01T01:15:03.029+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-09-01T01:15:03.149+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : Deleting job with ID: 6
+2024-09-01T01:15:03.161+03:00  INFO 1520 --- [final-project] [main] hit.final_project.JobService             : Job deleted with ID: 6
+2024-09-01T01:15:03.161+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : Finding job with ID: 6
+2024-09-01T01:15:03.175+03:00  INFO 1520 --- [final-project] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hit.final_project.FinalProjectApplicationTests$UpdateJobTests]: UpdateJobTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-01T01:15:03.178+03:00  INFO 1520 --- [final-project] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hit.final_project.FinalProjectApplication for test class hit.final_project.FinalProjectApplicationTests$UpdateJobTests
+2024-09-01T01:15:03.191+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobSuccessfully
+2024-09-01T01:15:03.192+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-09-01T01:15:03.307+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 7
+2024-09-01T01:15:03.310+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=7, uuid=e53a3a32-1214-4dbd-869a-6eb5e25362d7, jobName=Build Pipeline, status=PENDING, createdAt=2024-09-01T01:15:03.192270, updatedAt=2024-09-01T01:15:03.192270, jobType=BUILD, sensitiveData=$2a$10$RSOXnhN4CGunAM4icEG2kOZd5fz/49.FBUlUrhnl21v0P2iApRcfO)
+2024-09-01T01:15:03.310+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : Build Pipeline
+2024-09-01T01:15:03.403+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithVariousJobNames with jobName: 
+2024-09-01T01:15:03.404+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-09-01T01:15:03.510+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 8
+2024-09-01T01:15:03.512+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=8, uuid=ef7871d7-a0d9-4e23-acd4-3632152f5883, jobName=Original Job, status=PENDING, createdAt=2024-09-01T01:15:03.404270, updatedAt=2024-09-01T01:15:03.404270, jobType=BUILD, sensitiveData=$2a$10$Kdcor9si9tMqDKnBP43ZFOHDhImMpAk7NrUdidrTDhUHdgS2vzfVW)
+2024-09-01T01:15:03.512+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : 
+2024-09-01T01:15:03.547+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithVariousJobNames with jobName:  
+2024-09-01T01:15:03.548+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-09-01T01:15:03.665+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 9
+2024-09-01T01:15:03.667+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=9, uuid=78326bc2-7e99-4668-abca-49f9cee62370, jobName=Original Job, status=PENDING, createdAt=2024-09-01T01:15:03.548267, updatedAt=2024-09-01T01:15:03.548267, jobType=BUILD, sensitiveData=$2a$10$vsv8q6.wne9cNAgvA7ri9eL74cjrDac/2rWKb4iTGQdBj3uPy4Xjm)
+2024-09-01T01:15:03.667+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             :  
+2024-09-01T01:15:03.686+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithVariousJobNames with jobName: Valid Job Name
+2024-09-01T01:15:03.686+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-09-01T01:15:03.806+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 10
+2024-09-01T01:15:03.809+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=10, uuid=01ee5386-6217-4c16-98c6-05d08422cf6a, jobName=Original Job, status=PENDING, createdAt=2024-09-01T01:15:03.686267, updatedAt=2024-09-01T01:15:03.686267, jobType=BUILD, sensitiveData=$2a$10$Crzbm5uTFV1n5YCyqXvRl.eR/usx8RzPYuDr6BPatBuBMIpmMkmfm)
+2024-09-01T01:15:03.809+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : Valid Job Name
+2024-09-01T01:15:03.833+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithVariousJobNames with jobName: VeryVeryLongJobNameThatExceedsTheExpectedLengthLimit
+2024-09-01T01:15:03.834+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-09-01T01:15:03.945+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 11
+2024-09-01T01:15:03.947+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=11, uuid=64de24cc-1f2a-44bc-bc6d-5330d17a8d0a, jobName=Original Job, status=PENDING, createdAt=2024-09-01T01:15:03.834269, updatedAt=2024-09-01T01:15:03.834269, jobType=BUILD, sensitiveData=$2a$10$PirArivnAjuZJ9.Bx1lHbOfFBq7UBCNCaYUm3doK9x4XCSW7I.k2G)
+2024-09-01T01:15:03.947+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : VeryVeryLongJobNameThatExceedsTheExpectedLengthLimit
+2024-09-01T01:15:03.965+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testUpdateJobWithInvalidData
+2024-09-01T01:15:03.966+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-09-01T01:15:04.080+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : updating job with id: 12
+2024-09-01T01:15:04.082+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : Found job: Job(id=12, uuid=17084425-9bc1-4029-9723-eaa86167adcd, jobName=Original Job, status=PENDING, createdAt=2024-09-01T01:15:03.965267, updatedAt=2024-09-01T01:15:03.966272, jobType=BUILD, sensitiveData=$2a$10$Q0w9f140RvaUA2eQRMvUCOObLJZ/dXwlUraqOdRtoWN5lzFFlv8wC)
+2024-09-01T01:15:04.082+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : 
+2024-09-01T01:15:04.099+03:00  INFO 1520 --- [final-project] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hit.final_project.FinalProjectApplicationTests$CreateJobTests]: CreateJobTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-01T01:15:04.104+03:00  INFO 1520 --- [final-project] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hit.final_project.FinalProjectApplication for test class hit.final_project.FinalProjectApplicationTests$CreateJobTests
+2024-09-01T01:15:04.122+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithValidJobTypes with jobType: BUILD
+2024-09-01T01:15:04.122+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-09-01T01:15:04.254+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithValidJobTypes with jobType: DEPLOY
+2024-09-01T01:15:04.254+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-09-01T01:15:04.386+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithValidJobTypes with jobType: TEST
+2024-09-01T01:15:04.387+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-09-01T01:15:04.525+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithNullInputs
+2024-09-01T01:15:04.549+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousCreatedAtDates with dateTime: 2023-01-01T00:00:00
+2024-09-01T01:15:04.554+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitive data
+2024-09-01T01:15:04.678+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousCreatedAtDates with dateTime: 2024-12-31T23:59:59
+2024-09-01T01:15:04.691+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousCreatedAtDates with dateTime: 2050-01-01T00:00:00
+2024-09-01T01:15:04.713+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousStatuses with status: SUCCESS
+2024-09-01T01:15:04.715+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-09-01T01:15:04.837+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousStatuses with status: FAILED
+2024-09-01T01:15:04.838+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-09-01T01:15:04.961+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobWithVariousStatuses with status: PENDING
+2024-09-01T01:15:04.961+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : sensitive data: 
+2024-09-01T01:15:05.078+03:00  INFO 1520 --- [final-project] [main] h.f.FinalProjectApplicationTests         : Running testCreateJobSuccessfully
+2024-09-01T01:15:05.078+03:00 DEBUG 1520 --- [final-project] [main] hit.final_project.JobService             : sensitive data: sensitiveData
+2024-09-01T01:15:05.262+03:00  INFO 1520 --- [final-project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T01:15:05.267+03:00  INFO 1520 --- [final-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-01T01:15:05.272+03:00  INFO 1520 --- [final-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-01T01:15:48.483+03:00  INFO 20388 --- [final-project] [restartedMain] h.final_project.FinalProjectApplication  : Starting FinalProjectApplication using Java 21.0.4 with PID 20388 (C:\Users\hadar\hadars_projects\devOps\DevOpsFinalProject\final-project\target\classes started by hadar in C:\Users\hadar\hadars_projects\devOps\DevOpsFinalProject\final-project)
+2024-09-01T01:15:48.487+03:00 DEBUG 20388 --- [final-project] [restartedMain] h.final_project.FinalProjectApplication  : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-09-01T01:15:48.489+03:00  INFO 20388 --- [final-project] [restartedMain] h.final_project.FinalProjectApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T01:15:48.580+03:00  INFO 20388 --- [final-project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-01T01:15:48.581+03:00  INFO 20388 --- [final-project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-01T01:15:49.629+03:00  INFO 20388 --- [final-project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T01:15:49.709+03:00  INFO 20388 --- [final-project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interface.
+2024-09-01T01:15:50.560+03:00  INFO 20388 --- [final-project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T01:15:50.576+03:00  INFO 20388 --- [final-project] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-01T01:15:50.576+03:00  INFO 20388 --- [final-project] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-01T01:15:50.651+03:00  INFO 20388 --- [final-project] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-01T01:15:50.651+03:00  INFO 20388 --- [final-project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2069 ms
+2024-09-01T01:15:50.689+03:00  INFO 20388 --- [final-project] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T01:15:50.974+03:00  INFO 20388 --- [final-project] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:6c6231c0-1549-4be7-886f-66338919919c user=SA
+2024-09-01T01:15:50.976+03:00  INFO 20388 --- [final-project] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-01T01:15:50.990+03:00  INFO 20388 --- [final-project] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:6c6231c0-1549-4be7-886f-66338919919c'
+2024-09-01T01:15:51.183+03:00  INFO 20388 --- [final-project] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T01:15:51.280+03:00  INFO 20388 --- [final-project] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-01T01:15:51.332+03:00  INFO 20388 --- [final-project] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T01:15:51.771+03:00  INFO 20388 --- [final-project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T01:15:53.228+03:00  INFO 20388 --- [final-project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T01:15:53.287+03:00  INFO 20388 --- [final-project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T01:15:53.697+03:00  INFO 20388 --- [final-project] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-01T01:15:54.376+03:00  WARN 20388 --- [final-project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T01:15:54.423+03:00  WARN 20388 --- [final-project] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 07541f39-de9b-473b-8f2f-c1d57de6fc1e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T01:15:54.435+03:00  INFO 20388 --- [final-project] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-01T01:15:55.283+03:00  INFO 20388 --- [final-project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-01T01:15:55.340+03:00  INFO 20388 --- [final-project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-01T01:15:55.351+03:00  INFO 20388 --- [final-project] [restartedMain] h.final_project.FinalProjectApplication  : Started FinalProjectApplication in 7.555 seconds (process running for 8.904)
+2024-09-01T01:15:55.356+03:00  INFO 20388 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Initializing database in runtime...
+2024-09-01T01:15:55.791+03:00  INFO 20388 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Created Job: Job(id=1, uuid=37380029-76cb-44aa-a83a-b646b46bddf2, jobName=Build Pipeline, status=SUCCESS, createdAt=2024-08-30T01:15:55.356148, updatedAt=2024-08-31T01:15:55.356148, jobType=BUILD, sensitiveData=$2a$10$QIuQ4AY4OCOKyPMVe1y5ieeJoYpiUXXeNOnBfw/k2oExuCkXcjnuW)
+2024-09-01T01:15:55.796+03:00  INFO 20388 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Created Job: Job(id=2, uuid=3c28f9db-c673-42b1-bb32-caed26b79a76, jobName=Deploy to Staging, status=FAILED, createdAt=2024-08-27T01:15:55.475109900, updatedAt=2024-08-28T01:15:55.475109900, jobType=DEPLOY, sensitiveData=$2a$10$GbZF7yct67DuycBxlQqSjuzOmNjXgBqGDF4coWzEwEcfDaOMUY2CW)
+2024-09-01T01:15:55.797+03:00  INFO 20388 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Created Job: Job(id=3, uuid=041028a2-1073-483d-8559-ca34c2ea3972, jobName=Unit Tests, status=SUCCESS, createdAt=2024-08-29T01:15:55.638108600, updatedAt=2024-08-30T01:15:55.638108600, jobType=TEST, sensitiveData=)
+2024-09-01T01:15:55.798+03:00  INFO 20388 --- [final-project] [restartedMain] hit.final_project.DatabaseSeeder         : Database seeding completed.
+2024-09-01T01:16:32.817+03:00  INFO 20388 --- [final-project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T01:16:32.823+03:00  WARN 20388 --- [final-project] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-01T01:16:32.824+03:00  INFO 20388 --- [final-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-01T01:16:32.827+03:00  INFO 20388 --- [final-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-01T01:16:49.737+03:00  INFO 16524 --- [final-project] [main] h.final_project.FinalProjectApplication  : Starting FinalProjectApplication v0.0.1-SNAPSHOT using Java 21.0.4 with PID 16524 (C:\Users\hadar\hadars_projects\devOps\DevOpsFinalProject\final-project\target\final-project-0.0.1-SNAPSHOT.jar started by hadar in C:\Users\hadar\hadars_projects\devOps\DevOpsFinalProject\final-project)
+2024-09-01T01:16:49.743+03:00 DEBUG 16524 --- [final-project] [main] h.final_project.FinalProjectApplication  : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-09-01T01:16:49.745+03:00  INFO 16524 --- [final-project] [main] h.final_project.FinalProjectApplication  : The following 1 profile is active: "postgres"
+2024-09-01T01:16:51.362+03:00  INFO 16524 --- [final-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T01:16:51.476+03:00  INFO 16524 --- [final-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 1 JPA repository interface.
+2024-09-01T01:16:52.690+03:00  INFO 16524 --- [final-project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T01:16:52.716+03:00  INFO 16524 --- [final-project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-01T01:16:52.718+03:00  INFO 16524 --- [final-project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-01T01:16:52.796+03:00  INFO 16524 --- [final-project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-01T01:16:52.797+03:00  INFO 16524 --- [final-project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2890 ms
+2024-09-01T01:16:53.165+03:00  INFO 16524 --- [final-project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T01:16:53.322+03:00  INFO 16524 --- [final-project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-01T01:16:53.433+03:00  INFO 16524 --- [final-project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T01:16:54.103+03:00  INFO 16524 --- [final-project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T01:16:54.164+03:00  INFO 16524 --- [final-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T01:16:57.600+03:00  WARN 16524 --- [final-project] [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:290) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.11.jar!/:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.11.jar!/:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.11.jar!/:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.11.jar!/:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.11.jar!/:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar!/:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar!/:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.11.jar!/:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar!/:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar!/:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar!/:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar!/:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.11.jar!/:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.11.jar!/:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.11.jar!/:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar!/:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.2.jar!/:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.2.jar!/:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.2.jar!/:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.2.jar!/:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.2.jar!/:3.3.2]
+	at hit.final_project.FinalProjectApplication.main(FinalProjectApplication.java:10) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91) ~[final-project-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53) ~[final-project-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58) ~[final-project-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+
+2024-09-01T01:16:57.733+03:00  WARN 16524 --- [final-project] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-01T01:16:59.130+03:00  INFO 16524 --- [final-project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T01:16:59.158+03:00  INFO 16524 --- [final-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T01:17:00.172+03:00  WARN 16524 --- [final-project] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08001
+2024-09-01T01:17:00.174+03:00 ERROR 16524 --- [final-project] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : The connection attempt failed.
+2024-09-01T01:17:00.197+03:00 ERROR 16524 --- [final-project] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [The connection attempt failed.] [n/a]
+2024-09-01T01:17:00.201+03:00  WARN 16524 --- [final-project] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [The connection attempt failed.] [n/a]
+2024-09-01T01:17:00.208+03:00  INFO 16524 --- [final-project] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-09-01T01:17:00.242+03:00  INFO 16524 --- [final-project] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-01T01:17:00.304+03:00 ERROR 16524 --- [final-project] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [The connection attempt failed.] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.11.jar!/:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.11.jar!/:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar!/:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar!/:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar!/:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar!/:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.11.jar!/:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.11.jar!/:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.11.jar!/:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar!/:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.2.jar!/:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.2.jar!/:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.2.jar!/:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.2.jar!/:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.2.jar!/:3.3.2]
+	at hit.final_project.FinalProjectApplication.main(FinalProjectApplication.java:10) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91) ~[final-project-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53) ~[final-project-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58) ~[final-project-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [The connection attempt failed.] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-6.1.11.jar!/:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.11.jar!/:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.11.jar!/:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar!/:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar!/:6.1.11]
+	... 20 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [The connection attempt failed.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:185) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:98) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.11.jar!/:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.11.jar!/:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.11.jar!/:6.1.11]
+	... 24 common frames omitted
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:358) ~[postgresql-42.7.3.jar!/:42.7.3]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.7.3.jar!/:42.7.3]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273) ~[postgresql-42.7.3.jar!/:42.7.3]
+	at org.postgresql.Driver.makeConnection(Driver.java:446) ~[postgresql-42.7.3.jar!/:42.7.3]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.3.jar!/:42.7.3]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar!/:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar!/:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar!/:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar!/:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar!/:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar!/:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar!/:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:437) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.5.2.Final.jar!/:6.5.2.Final]
+	... 44 common frames omitted
+Caused by: java.net.UnknownHostException: db
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243) ~[postgresql-42.7.3.jar!/:42.7.3]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98) ~[postgresql-42.7.3.jar!/:42.7.3]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:136) ~[postgresql-42.7.3.jar!/:42.7.3]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262) ~[postgresql-42.7.3.jar!/:42.7.3]
+	... 58 common frames omitted
+

@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
-@Table
+@Table(name="jobs")
 @Data
 @NoArgsConstructor
 public class Job {
